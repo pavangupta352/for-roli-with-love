@@ -1,0 +1,33 @@
+.rs-dialog {
+  box-sizing: border-box;
+  width: min(92vw,31rem);
+  max-height: 85dvh;
+  overflow: auto;
+  padding: 1.5rem clamp(1.3rem,5vw,2.3rem) 1.8rem;
+  border: 1px solid #705c43;
+  border-radius: 5px;
+  background: #211c18;
+  color: #f7edde;
+  font-family: inherit;
+  text-align: left;
+  box-shadow: 0 24px 65px #0009;
+}
+.rs-dialog::backdrop { background: #0c0908c9; }
+.rs-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.rs-dialog h2,.rs-dialog h3 { color: #f9edda; font-family: 'Instrument Serif',Georgia,serif; font-weight: 400; line-height: 1.1; }
+.rs-dialog h2 { font-size: 2.15rem; margin: 0; }
+.rs-dialog h3 { font-size: 1.65rem; margin: .2rem 0; }
+.rs-dialog p { margin: .6rem 0; line-height: 1.5; font-size: .93rem; color: #e9ddcd; }
+.rs-dialog .rs-intro { margin: 1.2rem 0; }
+.rs-track { border-top: 1px solid #584736; padding: 1rem 0; }
+.rs-moment { font-size: .76rem; color: #e0ba84; }
+.rs-button { font: inherit; font-size: .88rem; min-height: 44px; padding: .45rem .8rem; border: 1px solid #987851; border-radius: 3px; color: #f8e2c3; background: transparent; cursor: pointer; }
+.rs-button:hover { background: #3c3226; }
+.rs-close { border: 0; text-decoration: underline; text-underline-offset: .28em; color: #e7cfb0; }
+.rs-dialog details { margin: 1rem 0 0; }
+.rs-dialog summary { min-height: 32px; padding: .25rem 0; color: #dfc6a6; font-size: .84rem; cursor: pointer; }
+.rs-picker { display: block; margin: .7rem 0; font-size: .88rem; }
+.rs-picker input { display: block; width: 100%; font: inherit; margin: .65rem 0; }
+.rs-dialog .rs-status { display: block; font-size: .8rem; color: #edd2aa; }
+.rs-player { border: 0; border-radius: 8px; width: 100%; height: 175px; display: block; margin: 1rem 0 0; }
+.rs-dialog :focus-visible { outline: 2px solid #edca98; outline-offset: 3px; }
